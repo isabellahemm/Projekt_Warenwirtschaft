@@ -1,16 +1,20 @@
 <?php
-if (!empty ($_POST['name']) AND !empty ($_POST['ek']) AND !empty ($_POST['vk']))
+if (!empty ($_POST['id']) AND !empty ($_POST['name']) AND !empty ($_POST['ek']) AND !empty ($_POST['vk']))
 {
 	include 'db.php';
+	$id = $_POST["id"];
 	$name = $_POST["name"];
 	$ek = $_POST["ek"];
 	$vk = $_POST["vk"];
 	
-	$sql="Insert Into ware (Name, Einkaufspreis, Verkaufspreis) VALUES('$name','$ek','$vk')";
+	$sql="Insert Into ware () VALUES('$id','$name','$ek','$vk')";
 	mysqli_query($connection,$sql) or die ("Fehgeschlafen! SQL-Error:".mysqli_error($connection));
 }
 else{?>
-	<form method="POST" action="vorlage.php?content=add" >
+	<form method="POST" action="add.php" >
+	Produkt ID: <br/>
+	<input type="text" name="id" />
+	<br>
 	Produktname: <br />
 	<input type="text" name="name" />
 	<br>

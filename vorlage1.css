@@ -1,7 +1,8 @@
+
 body {
-	font-family: Arial;
-	margin: 50px;
-}	
+	padding: 0px;
+	margin: 0px;
+	}	
 
 #wrapper {
 	width: 1000px;
@@ -22,7 +23,6 @@ body {
 	font-size: 35px;
 	font-weight: bold;
 	padding-top: 20px;
-	text-shadow: 3px 3px 3px #777;
 }
 
 #ueberschrift {
@@ -30,36 +30,29 @@ body {
 	background-color: #8d001e;
 	text-align: center;
 	color: #fff;
-	font-size: 30px;
 }
 
-#menu_left a {
+#menu_left li {
 	font-weight: bold;
-	background-color: #cee1f5;
-	padding: 10px;
-	transition: 0.8s;
-	text-decoration: none;
-	color: black;
+	margin-bottom: 20px;
 }
 
 #menu_left {
-	width: 200px;
-	height: 400px;
+	width: 150px;
+	min-height: 50px;
 	float: left;
+	width: 200px;
 	margin-right: 30px;
-	background-color: #cee1f5;
-	display: grid;
 }
 
-#menu_left a:hover {
-	background-color: white;
-}
+
 
 #content {
 	width: 710px;
 	min-height: 50px;
 	margin: 0;
 	float: left;	
+	border: 1px solid #ebebeb;
 	padding: 20px;
 	margin-bottom: 20px;
 }
@@ -81,13 +74,13 @@ body {
 #stock td {
     border: solid 1px;
     text-align: center;
-    font-family: Arial;
+    font-family: AppleGothic;
 }
 
 #stock th {
     border: solid 1px;
     text-align: center;
-    font-family: Arial;
+    font-family: AppleGothic;
 }
 
 
